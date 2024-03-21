@@ -1,0 +1,16 @@
+model:
+  target: evomerge.JSVLM
+  params:
+    model_kwargs:
+      torch_dtype: torch.float16
+    generation_config:
+      do_sample: false
+      max_new_tokens: 512
+      num_beams: 5
+      repetition_penalty: 1.5
+eval:
+    - target: evomerge.eval.JaVLMBenchIntheWild
+      params:
+        loader_kwargs:
+          batch_size: 4
+          num_workers: 2

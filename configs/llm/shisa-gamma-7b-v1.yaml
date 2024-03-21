@@ -1,0 +1,11 @@
+model:
+  target: evomerge.CausalLMWithvLLM
+  params:
+    # model_path: augmxnt/shisa-gamma-7b-v1
+    model_path: /home/mkshing/.cache/huggingface/hub/models--augmxnt--shisa-gamma-7b-v1/snapshots/49bf4a58453d191845668b8ff17e4b8f0e9ccae6/
+    # model_kwargs:
+    #   dtype: bfloat16
+    template: ja-alpaca-cot
+  
+eval:
+  target: evomerge.eval.JaMGSM

@@ -1,0 +1,10 @@
+model:
+  target: evomerge.CausalLMWithvLLM
+  params:
+    model_path: upaya07/Arithmo2-Mistral-7B
+    model_kwargs:
+      dtype: bfloat16
+    template: ja-alpaca-cot
+  
+eval:
+  target: evomerge.eval.JaMGSM

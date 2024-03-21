@@ -1,0 +1,10 @@
+model:
+  target: evomerge.CausalLMWithvLLM
+  params:
+    model_path: SakanaAI/EvoLLM-JP-v1-7B
+    model_kwargs:
+      dtype: bfloat16
+    template: ja-alpaca-cot
+  
+eval:
+  target: evomerge.eval.JaMGSM

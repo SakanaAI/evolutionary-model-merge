@@ -1,0 +1,10 @@
+model:
+  target: evomerge.CausalLMWithvLLM
+  params:
+    model_path: GAIR/Abel-7B-002
+    model_kwargs:
+      dtype: bfloat16
+    template: ja-alpaca-cot
+  
+eval:
+  target: evomerge.eval.JaMGSM
