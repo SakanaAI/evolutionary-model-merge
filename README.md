@@ -49,11 +49,11 @@ For details on the evaluation, please see Section 4.2 of the paper.
 | :-- | --: | --: |
 | [LLaVA-1.6-Mistral-7B](https://llava-vl.github.io/blog/2024-01-30-llava-next/) | 14.32 | 41.10 |
 | [Japanese Stable VLM](https://huggingface.co/stabilityai/japanese-stable-vlm) | -<sup>*1</sup> | 40.50 |
-| [Heron BLIP Japanese StableLM Base 7B llava-620k](https://huggingface.co/turing-motors/heron-chat-blip-ja-stablelm-base-7b-v1-llava-620k) | 8.73<sup>*2</sup> | 27.37<sup>*2</sup> |
+| [Heron BLIP Japanese StableLM Base 7B llava-620k](https://huggingface.co/turing-motors/heron-chat-blip-ja-stablelm-base-7b-v1-llava-620k) | 14.51 | 33.26 |
 | [EvoVLM-JP-v1-7B](https://huggingface.co/SakanaAI/EvoVLM-JP-v1-7B) | **19.70** | **51.25** |
 
 * \*1: Japanese Stable VLM cannot be evaluated using the JA-VG-VQA-500 dataset because this model has used this dataset for training.
-* \*2: We are checking with the authors to see if this current results are valid.
+
 
 
 

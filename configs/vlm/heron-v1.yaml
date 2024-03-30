@@ -1,8 +1,8 @@
 model:
   target: evomerge.HeronV1
   params:
-    # model_path: turing-motors/heron-chat-blip-ja-stablelm-base-7b-v1-llava-620k
-    model_path: turing-motors/heron-chat-blip-ja-stablelm-base-7b-v1
+    model_path: turing-motors/heron-chat-blip-ja-stablelm-base-7b-v1-llava-620k
+    # model_path: turing-motors/heron-chat-blip-ja-stablelm-base-7b-v1
     template: ja-heron-v1
     model_kwargs:
       torch_dtype: torch.float16
@@ -18,10 +18,10 @@ eval:
     - target: evomerge.eval.JaVGVQA
       params:
         loader_kwargs:
-          batch_size: 4
+          batch_size: 1
           num_workers: 2
     - target: evomerge.eval.JaVLMBenchIntheWild
       params:
         loader_kwargs:
-          batch_size: 4
+          batch_size: 1
           num_workers: 2
